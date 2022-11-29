@@ -1,0 +1,20 @@
+{
+    "Gender": {
+        "male": 0,
+        "female": 1
+    },
+    "Embarked": {
+        "S": 0,
+        "C": 1,
+        "Q": 2
+    },
+    "columns": [
+        "Pclass",
+        "Gender",
+        "Age",
+        "SibSp",
+        "Parch",
+        "Fare",
+        "Embarked"
+    ]
+}
