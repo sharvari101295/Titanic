@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Titanic Data Form</title>
+    <!-- <style>
+        body {
+          background-image: url('/static/titanic4.jpg');          
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          color:white;
+        }
+    </style> -->
+</head>
+<body align="center">  
+    <form action = "/result" method = "POST">
+        <label> Pclass : </label>
+        <select name="Pclass">
+            <option> Select any below PClass </option>
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+        </select><br><br>
+
+        <label> Gender : </label>
+        <input type="radio" name="Gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="Gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label> Age : </label>
+        <input type="text" name="Age"/><br><br>
+
+        <label> SibSp : </label>
+        <select name="SibSp">
+            <option> Select any below value </option>
+            <option> 0 </option>
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+            <option> 5 </option>
+            <option> 8 </option>
+        </select><br><br>
+
+        <label> Parch : </label>
+        <select name="Parch">
+            <option> Select any below value </option>
+            <option> 0 </option>
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+            <option> 5 </option>
+            <option> 6 </option>
+        </select><br><br>
+
+        <label> Fare : </label>
+        <input type="text" name="Fare" placeholder="Enter no between 0 to 513 "/><br><br>
+
+        <label> Embarked : </label>
+        <select name="Embarked">
+            <option> Select any below value </option>
+            <option> S </option>
+            <option> C </option>
+            <option> Q </option>
+        </select><br><br>
+
+        <input type = "submit" value = "Submit" />
+    </form>
+
+        <p>
+            Your prediction is : {{prediction}}
+        </p>
+
+</body>
+</html>
